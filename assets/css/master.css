@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body{
+    background-color: #efe3e5;
+    padding: 30px 0;
+    /*font-family: 'redhat', sans-serif;*/
+}
+
+.bg-white{
+    background-color: white;
+}
+
+
+.product-list .card{
+    background-color: transparent;
+    border: 0;
+}
+
+.product-list .card .card-body{
+    padding-top:40px ;
+}
+.product-list .card .card-link{
+    top:-17px !important;
+    /*TODO: convert to transform*/
+    left: 50%;
+    background-color: #fff;
+    border: 1px solid #666;
+    border-radius: 12px;
+    transform: translate(-50%);
+
+}
+
+.product-list .card img{
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.product-list .card  .card-link:hover{
+    color: orangered;
+    border-color: orange;
+}
+
+.sidebar{
+    border-radius: 12px;
+}
+
+.sidebar ul li{
+    border-bottom: 1px solid #eee ;
+}
+
+.sidebar ul li:last-child{
+    border-bottom: 0;
+}
+.sidebar ul li .image-container{
+    border-radius: 50%;
+    border: 1px solid #666;
+    padding: 6px;
+}
+.btn-txt{
+    background-color: hsl(14, 86%, 42%) ;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    }
+
+
+    .carbon-txt{
+        font-weight: 400;
+        font-size: 12px;
+    }
+    
+    .carbon-card{
+        background-color: hsl(28, 80%, 95%) ;
+        font-size: 10px;
+        padding: 10px;
+        max-width: 100%;
+        }
+    
