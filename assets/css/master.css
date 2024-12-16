@@ -4,7 +4,7 @@
 body{
     background-color: #efe3e5;
     padding: 30px 0;
-    /*font-family: 'redhat', sans-serif;*/
+    overflow-x: hidden;
 }
 
 .bg-white{
@@ -67,12 +67,12 @@ body{
     }
 
 
-    .carbon-txt{
+    .order-text-card{
         font-weight: 400;
         font-size: 12px;
     }
     
-    .carbon-card{
+    .order-info-card{
         background-color: hsl(28, 80%, 95%) ;
         font-size: 10px;
         padding: 10px;
