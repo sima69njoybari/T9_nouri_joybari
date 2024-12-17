@@ -1,14 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+:root{
+    --x-font-custom1:clamp(10px ,1vw , 20px);
+    --x-font-custom2:clamp(20px ,1vw , 30px);
+    --x-font-custom3:clamp(10px ,1vw , 15px);
+    --x-font-custom4:clamp(20px ,1vw , 30px);
+
+    --x-clr-custom1: #fff;
+    --x-clr-custom2: #efe3e5;
+    --x-clr-custom3: #666;
+    --x-clr-custom4:  orangered;
+    --x-clr-custom5:  orange;
+    --x-clr-custom6:  hsl(14, 86%, 42%);
+    --x-clr-custom7:   hsl(28, 80%, 95%) 
+}
+
 
 body{
-    background-color: #efe3e5;
+    background-color: var(--x-clr-custom2);
     padding: 30px 0;
     overflow-x: hidden;
 }
 
 .bg-white{
-    background-color: white;
+    background-color:var(--x-clr-custom1);
 }
 
 
@@ -22,10 +37,9 @@ body{
 }
 .product-list .card .card-link{
     top:-17px !important;
-    /*TODO: convert to transform*/
     left: 50%;
-    background-color: #fff;
-    border: 1px solid #666;
+    background-color: var(--x-clr-custom1);
+    border: 1px solid var(--x-clr-custom3);
     border-radius: 12px;
     transform: translate(-50%);
 
@@ -37,8 +51,8 @@ body{
 }
 
 .product-list .card  .card-link:hover{
-    color: orangered;
-    border-color: orange;
+    color: var(--x-clr-custom4);
+    border-color: var(--x-clr-custom5);
 }
 
 .sidebar{
@@ -46,7 +60,7 @@ body{
 }
 
 .sidebar ul li{
-    border-bottom: 1px solid #eee ;
+    border-bottom: 1px solid var(--x-clr-custom3) ;
 }
 
 .sidebar ul li:last-child{
@@ -54,28 +68,31 @@ body{
 }
 .sidebar ul li .image-container{
     border-radius: 50%;
-    border: 1px solid #666;
-    padding: 6px;
+    border: 1px solid var(--x-clr-custom3);
+    padding: 3px;
 }
 .btn-txt{
-    background-color: hsl(14, 86%, 42%) ;
-    color: white;
+    background-color: var(--x-clr-custom6) ;
+    color: var(--x-clr-custom1);
     border-radius: 15px;
     border: none;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--x-font-custom3);
     }
 
 
     .order-text-card{
         font-weight: 400;
-        font-size: 12px;
+        font-size: var(--x-font-custom1);
     }
     
     .order-info-card{
-        background-color: hsl(28, 80%, 95%) ;
-        font-size: 10px;
+        background-color: var(--x-clr-custom7);
+        font-size: var(--x-font-custom1);
         padding: 10px;
         max-width: 100%;
         }
-    
+    h3{
+        font-size: var(--x-font-custom4);
+
+    }
